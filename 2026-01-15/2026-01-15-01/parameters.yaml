@@ -1,0 +1,14 @@
+clock_offset: 0.0 # s, approximately
+node_distance: 1.112 # m
+message_interval: 8e-3 # s
+tx_antenna_delay: 0 # us
+rx_antenna_delay: 0 # us
+rx_timeout: 5000 # us
+# preamble_timeout: 0 # us, deactivated if commented
+nodes:
+- 0x00 # /dev/ttyACM0
+- 0x01 # /dev/ttyACM1
+temperature: # deg C
+- 32.8 # node 0x00
+- 32.1 # node 0x01
+K: 5000

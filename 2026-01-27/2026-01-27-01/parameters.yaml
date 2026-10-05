@@ -1,0 +1,28 @@
+message_interval: 1.2e-2 # s
+message_measure: # how many messages sent per node alternatively
+- 1 # node 0x00
+- 1 # node 0x01
+- 1 # node 0x02
+tx_antenna_delay: 0 # us
+rx_antenna_delay: 0 # us
+rx_timeout: 10000 # us
+preamble_timeout: 16000 # us, deactivated if commented
+nodes:
+- 0x00 # /dev/ttyACM0
+- 0x01 # /dev/ttyACM1
+- 0x02 # /dev/ttyACM2
+node_pairs:
+  - nodes:
+    - 0x00
+    - 0x01
+    distance: 0.646 # m
+  - nodes:
+    - 0x00
+    - 0x02
+    distance: 0.523 # m
+  - nodes:
+    - 0x01
+    - 0x02
+    distance: 0.483 # m
+K: 1000
+preamble_length: 256
